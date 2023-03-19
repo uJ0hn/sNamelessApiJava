@@ -44,7 +44,7 @@ public class NMApi {
 	}
 	
 
-	public Forms getFormsModule(int formid) {
+	public Forms getIntegrationForm(int formid) {
 		return new Forms(formid);
 	}
 
