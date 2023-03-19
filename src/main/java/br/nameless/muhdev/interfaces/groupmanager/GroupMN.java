@@ -46,7 +46,7 @@ public class GroupMN implements GroupManager {
         CachedRowSet query = BackendNMC.getBackend().query("SELECT * FROM nl2_users_groups WHERE user_id=?", user.getId());
         List<String> strings = new ArrayList<>();
         for(int i = 0 ; i < query.size() ; i++) {
-            strings.add(NMApi.getGroupById(query.getInt("group_id")).getName().toUpperCase());
+            strings.add(NMApi.getGroup(query.getInt("group_id")).getName().toUpperCase());
             query.next();
         }
 
@@ -59,7 +59,7 @@ public class GroupMN implements GroupManager {
         CachedRowSet query = BackendNMC.getBackend().query("SELECT * FROM nl2_users_groups WHERE user_id=?", user.getId());
         List<Group> strings = new ArrayList<>();
         for(int i = 0 ; i < query.size() ; i++) {
-            strings.add(NMApi.getGroupById(query.getInt("group_id")));
+            strings.add(NMApi.getGroup(query.getInt("group_id")));
             query.next();
         }
 

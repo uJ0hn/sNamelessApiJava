@@ -22,20 +22,20 @@ public class NMApi {
 	}
 	
 	
-	public static User getUserByName(String name) {
+	public static User getUser(String name) {
 		return new UserAPIByName(name);
 	}
 
-	public static User getUserByID(int id) {
+	public static User getUser(int id) {
 		return new UserAPIById(id);
 	}
 
 
-	public static Group getGroupByName(String name) {
+	public static Group getGroup(String name) {
 		return new GroupAPIByName(name);
 	}
 
-	public static Group getGroupById(int id) {
+	public static Group getGroup(int id) {
 		return new GroupAPIById(id);
 	}
 

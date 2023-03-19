@@ -32,13 +32,13 @@ NMApi api = NMApi.getNameless("http://example.com", "127.0.0.1", "3306", "namele
 
 ```java
 NMApi api = NMApi.getNameless("http://example.com", "127.0.0.1", "3306", "nameless", "root", "");
-User user = api.getUserByName("NamelessMC"); \\ or
-User user = api.getUserById(1);
+User user = api.getUser("NamelessMC"); \\ or
+User user = api.getUser(1);
 ```
 
 ## Puxar Grupos
 ```java
 NMApi api = NMApi.getNameless("http://example.com", "127.0.0.1", "3306", "nameless", "root", "");
-Group group = api.getGroupByName("Admin"); \\ or
-Group group = api.getGroupById(1);
+Group group = api.getGroup("Admin"); \\ or
+Group group = api.getGroup(1);
 ```
